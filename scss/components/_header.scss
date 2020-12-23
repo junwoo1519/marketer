@@ -1,0 +1,106 @@
+.header {
+  -webkit-box-shadow:  1px 1px 10px #303030;
+  -moz-box-shadow:  1px 1px 10px #303030;
+  box-shadow:  1px 1px 10px #303030;
+  .top-heard {
+    background-color: #343434;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sns-links {
+      display: flex;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+        transition: 0.5s;
+        &:hover {
+          &.pinterest {
+            background: #9946a8;
+          }
+          &.twitter {
+            background: #77a5e8;
+          }
+          &.facebook {
+            background: #2032b1;
+          }
+          &.instagram {
+            background: #b750c6;
+          }
+          &.skype {
+            background: #2f88f1;
+          }
+        }
+        i {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+
+      .item {
+        color: #fff;
+        //&:last-child {
+        //  margin-left: 30px;
+        //}
+        + .item { // + .코드 는 형제요소 에서 처음꺼 빼고 적용
+          // .코드 + .코드 + .코드 는 형제요소 에서 첫번째와 두번째 빼고 적용
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  .main-heard {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      img {
+        width: 172px;
+      }
+    }
+    .gnb {
+      display: flex;
+      nav {
+        display: flex;
+        .nav-item{
+          .nav-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            height: 85px;
+            padding: 0 10px;
+            margin: 10px;
+            text-transform: capitalize;
+            &:hover {
+              color: #087;
+            }
+            i {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+
+      .btn-menu {
+        display: none;
+      }
+    }
+  }
+}
